@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     align-items: center;
     height: 100vh;
@@ -9,4 +9,92 @@ body .heroBotones {
     display: flex;
     width: 100vw;
     justify-content: space-evenly;
+}
+
+.btnHombre,
+.btnMujer {
+    background-color: #000;
+    color: #bebebe;
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.btnHombre span,
+.btnMujer span {
+    position: absolute;
+    background-color: #000;
+    transition: all 0.7s ease-in-out;
+}
+
+
+.btnHombre:hover,
+.btnMujer:hover {
+    background: transparent;
+    opacity: 0.9;
+    box-shadow: none;
+    color: #000;
+}
+
+
+.btnHombre span:nth-child(1),
+.btnMujer span:nth-child(1) {
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: -100%;
+}
+
+.btnHombre span:nth-child(2),
+.btnMujer span:nth-child(2) {
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: -100%;
+}
+
+.btnHombre span:nth-child(3),
+.btnMujer span:nth-child(3) {
+    width: 2px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+}
+
+.btnHombre span:nth-child(4),
+.btnMujer span:nth-child(4) {
+    width: 2px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+.btnHombre:hover span:nth-child(1),
+.btnMujer:hover span:nth-child(1) {
+    left: 0;
+}
+
+.btnHombre:hover span:nth-child(2),
+.btnMujer:hover span:nth-child(2) {
+    right: 0;
+}
+
+.btnHombre:hover span:nth-child(3),
+.btnMujer:hover span:nth-child(3) {
+    bottom: 0;
+}
+
+.btnHombre:hover span:nth-child(4),
+.btnMujer:hover span:nth-child(4) {
+    top: 0;
 }
